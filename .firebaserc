@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "currencyapp-6540d": {
+      "hosting": {
+        "CurrencyApp": [
+          "currencyapp-6540d"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.header {
+    text-align: center;
+    font-family: cursive;
+}
+.text-field {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.response{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.btn{
+    float: left;
+}
+.list {
+    display: flex;
+    justify-content: center;
+    
+}
+.header-two {
+    text-align: center;
+    font-family: cursive;
+    margin-top: 75px;
+}
+// .crypto-field {
+//     display: flex;
+//     justify-content: center;
+//     align-content: center;
+// }
+.currency-response {
+    font-weight: bold;
+    font-family: cursive;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.crypto-container {
+    background: white;
+    width: 70%;
+    margin: 0 auto 4px auto;
+    padding: 1em;
+    box-shadow: 5px 10px 0 lightgrey;
+    
+}
+span.left {
+    font-weight: bold;
+}
+span.right {
+    float: right;
+}

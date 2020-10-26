@@ -1,0 +1,26 @@
+<h4 class="header">Currency Search</h4>
+<mat-form-field class="text-field" appearance="fill">
+    <mat-label>EUR base = 1</mat-label>
+    <mat-select [(ngModel)]="selectedValue" name="symbols">
+        <mat-option *ngFor="let symbols of currencies" [value]="symbols.value">
+            {{symbols.viewValue}}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+<mat-form-field class="list">
+    <mat-label>Length greater than 0</mat-label>
+    <input  matInput [(ngModel)]="length" type="number">
+</mat-form-field>
+<div class="response">
+    <button class="btn" (click)="currencySearch()">Search</button>
+    <p class="currency-response">
+        Value = {{ convertCurrency}}
+    </p>
+</div>
+<h4 class="header-two">Crypto Currency</h4>
+<div *ngIf="cryptos">
+    <div class="crypto-container" *ngFor="let crypto of objectKeys(cryptos)">
+        <span class="left">{{ crypto }}</span>
+        <span class="right"> {{ cryptos[crypto].USD | currency:'USD':true }}</span>
+    </div>
+</div>
