@@ -11,7 +11,7 @@ const redirectLoggedInToCurrency = () => redirectLoggedInTo(['currency']);
 const routes: Routes = [
   {path: '', component: LoginComponent, canActivate: [AngularFireAuthGuard], data: { authGuardPipe: redirectLoggedInToCurrency }}, 
   {path: 'currency', component: CurrencyComponent, canActivate: [AngularFireAuthGuard], data: {authGuardPipe: redirectUnauthorizedToLogin}}, 
-  {path: '**', redirectTo: '/login'}
+  {path: '**', redirectTo: '/currency'}
 ];
 
 @NgModule({
