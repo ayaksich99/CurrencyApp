@@ -1,4 +1,4 @@
-<h4 class="header">Currency Search</h4>
+<h3 class="header">Currency Search</h3>
 <mat-form-field class="text-field" appearance="fill">
     <mat-label>EUR base = 1</mat-label>
     <mat-select [(ngModel)]="selectedValue" name="symbols">
@@ -17,7 +17,7 @@
         Value = {{ convertCurrency}}
     </p>
 </div>
-<h4 class="header-two">Crypto Currency</h4>
+<h3 class="header-two">Crypto Currency</h3>
 <div *ngIf="cryptos">
     <div class="crypto-container" *ngFor="let crypto of objectKeys(cryptos)">
         <span class="left">{{ crypto }}</span>

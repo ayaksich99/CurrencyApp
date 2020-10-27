@@ -6,6 +6,9 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CurrencyService {
+  static currencySearch() {
+    throw new Error('Method not implemented.');
+  }
   
   constructor(private http: HttpClient) { }
 

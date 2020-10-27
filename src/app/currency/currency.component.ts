@@ -16,6 +16,7 @@ cryptoResponse: {};
   response: number;
   currency: CurrencyLatest;
   convertCurrency: number;
+  cryptoChart: any;
   objectKeys = Object.keys;
   cryptos: any;
   
