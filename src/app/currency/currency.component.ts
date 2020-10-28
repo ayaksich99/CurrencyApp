@@ -12,11 +12,11 @@ import { CurrencyService } from '../service/currency.service';
 export class CurrencyComponent implements OnInit {
 cryptoResponse: {};
   selectedValue: '';
+  lengthCrypto: number;
   length: number;
   response: number;
   currency: CurrencyLatest;
   convertCurrency: number;
-  cryptoChart: any;
   objectKeys = Object.keys;
   cryptos: any;
   
