@@ -47,7 +47,8 @@ span.left {
     font-weight: bold;
 }
 span.right {
-    float: right;
+    display: flex;
+    justify-content: flex-end;
 }
 .listCrypto {
     display:flex;
