@@ -9,7 +9,7 @@
 </mat-form-field>
 <mat-form-field class="list">
     <mat-label>Length greater than 0</mat-label>
-    <input  matInput [(ngModel)]="length" type="number">
+    <input  matInput [(ngModel)]="length" type="number" value="1">
 </mat-form-field>
 <div class="response">
     <button class="btn" (click)="currencySearch()">Search</button>
@@ -23,9 +23,9 @@
         <span class="left">{{ crypto }}
             <mat-form-field class="list">
                 <mat-label>Number of shares</mat-label>
-                <input  matInput [(ngModel)]="lengthCrypto" type="number">
+                <input #cryptoShares matInput type="number" value="1">
             </mat-form-field>
         </span>
-        <span class="right"> {{ cryptos[crypto].USD | currency:'USD':true }}</span>
+        <span class="right"> {{ cryptos[crypto].USD * cryptoShares.value | currency:'USD':true }}</span>
     </div>
 </div>
