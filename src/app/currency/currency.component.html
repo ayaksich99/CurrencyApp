@@ -20,7 +20,12 @@
 <h3 class="header-two">Crypto Currency</h3>
 <div *ngIf="cryptos">
     <div class="crypto-container" *ngFor="let crypto of objectKeys(cryptos)">
-        <span class="left">{{ crypto }}</span>
+        <span class="left">{{ crypto }}
+            <mat-form-field class="list">
+                <mat-label>Number of shares</mat-label>
+                <input  matInput [(ngModel)]="lengthCrypto" type="number">
+            </mat-form-field>
+        </span>
         <span class="right"> {{ cryptos[crypto].USD | currency:'USD':true }}</span>
     </div>
 </div>
