@@ -21,7 +21,7 @@
 <div *ngIf="cryptos">
     <div class="crypto-container" *ngFor="let crypto of objectKeys(cryptos)">
         <span class="left">{{ crypto }}
-            <mat-form-field class="list">
+            <mat-form-field class="listCrypto">
                 <mat-label>Number of shares</mat-label>
                 <input #cryptoShares matInput type="number" value="1">
             </mat-form-field>
